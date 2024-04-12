@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    width: 100%;
+}
+
+.text-container {
+    width: 70%; /* Ancho del contenedor de texto */
+    font-size: 30px;
+}
+
+.image {
+    width: 25%; /* Ancho de la imagen */
+}
+
+.button-below {
+    position: absolute; /* Posición absoluta para el botón */
+    bottom: 10px; /* Espacio desde abajo */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Mover hacia la izquierda en un 50% del ancho del botón */
+    border: 2px solid blue; /* Borde de 2px sólido azul */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    background-color: transparent; /* Fondo transparente */
+    color: blue; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+
+
