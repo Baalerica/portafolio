@@ -57,3 +57,14 @@ body {
             color: #000000; /* Color del texto */
             
         }
+        .flex {
+            display: flex;
+        }
+        
+        .flex-col {
+            flex-direction: column;
+        }
+        
+        .items-center {
+            align-items: center; /* Centra verticalmente los elementos */
+        }
