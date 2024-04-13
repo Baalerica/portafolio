@@ -1,0 +1,27 @@
+
+body {
+    background-color: #93bf85;
+    }
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    width: 100%;
+}
+
+.text-container {
+    width: 70%; /* Ancho del contenedor de texto */
+    font-size: 30px;
+    color: #ffffff;
+    text-align:left;
+    
+}
+
+.image {
+    width: 25%; /* Ancho de la imagen */
+    image-orientation: initial;
+}
+
+
+
+
