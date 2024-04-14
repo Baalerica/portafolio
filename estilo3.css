@@ -1,6 +1,7 @@
 
+
 body {
-    background-color: #93bf85;
+    background-color: #aa8caf;
     }
 .container {
     display: flex;
@@ -17,54 +18,8 @@ body {
     
 }
 
-/* Estilos de las filas */
-.row {
-    display: flex; /* Usa flexbox para alinear las imágenes */
-    justify-content: space-between; /* Distribuye el espacio entre las imágenes */
-}
-
-/* Estilos del contenedor principal */
-.container {
-    width: 80%; /* Ancho del contenedor */
-    margin: 0 auto; /* Centra horizontalmente el contenedor */
-    padding: 20px; /* Relleno del contenedor */
-}
-
-/* Estilos de las filas */
-.row {
-    display: flex; /* Usa flexbox para alinear las imágenes */
-    justify-content: space-between; /* Distribuye el espacio entre las imágenes */
-    margin-bottom: 20px; /* Margen inferior para separar las filas */
-}
-
-/* Estilos de las imágenes */
 .image {
-    width: 30%; /* Ancho de las imágenes */
-    border-radius: 5px; /* Borde redondeado */
-
+    width: 10%; /* Ancho de la imagen */
+    
+    
 }
-
-/* Estilo para las imágenes en pantallas pequeñas */
-@media (max-width: 768px) {
-    .image {
-        width: 45%; /* Ancho de las imágenes en pantallas pequeñas */
-    }
-    }
-     /* Estilos del texto */
-    .figcaption {
-            margin-top: 20px; /* Margen superior */
-            font-size: 14px; /* Tamaño de la fuente */
-            color: #000000; /* Color del texto */
-            
-        }
-        .flex {
-            display: flex;
-        }
-        
-        .flex-col {
-            flex-direction: column;
-        }
-        
-        .items-center {
-            align-items: center; /* Centra verticalmente los elementos */
-        }
