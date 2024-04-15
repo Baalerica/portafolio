@@ -8,6 +8,113 @@
   <link rel="stylesheet" href="estilo5.css" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slide {
+        position: relative;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+        margin-top: 26px;
+    }
+    .slide-inner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: calc( 300px + 3em);
+    }
+    .slide-open:checked + .slide-item {
+        position: static;
+        opacity: 100;
+    }
+    .slide-item {
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+    .slide-item img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+    .slide-control {
+        background: rgba(0, 0, 0, 0.28);
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        font-size: 40px;
+        height: 40px;
+        line-height: 35px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        cursor: pointer;
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        text-align: center;
+        width: 40px;
+        z-index: 10;
+    }
+    .slide-control.prev {
+        left: 2%;
+    }
+    .slide-control.next {
+        right: 2%;
+    }
+    .slide-control:hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: #aaaaaa;
+    }
+    #slide-1:checked ~ .control-1,
+    #slide-2:checked ~ .control-2,
+    #slide-3:checked ~ .control-3 {
+        display: block;
+    }
+    .slide-indicador {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+    }
+    .slide-indicador li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .slide-circulo {
+        color: #828282;
+        cursor: pointer;
+        display: block;
+        font-size: 35px;
+    }
+    .slide-circulo:hover {
+        color: #aaaaaa;
+    }
+    #slide-1:checked ~ .control-1 ~ .slide-indicador 
+         li:nth-child(1) .slide-circulo,
+    #slide-2:checked ~ .control-2 ~ .slide-indicador 
+          li:nth-child(2) .slide-circulo,
+    #slide-3:checked ~ .control-3 ~ .slide-indicador 
+          li:nth-child(3) .slide-circulo {
+        color: #428bca;
+    }
+    #titulo {
+        width: 100%;
+        position: absolute;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 27px;
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Open Sans', sans-serif;
+        z-index: 9999;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+             -1px 0px 2px rgba(255, 255, 255, 0);
+    }
+</style>
 </head>
 
 </div>
@@ -182,6 +289,42 @@
       <!-- Your content -->
     </div>
   </main>
+</div>
+<div class="slide">
+  <div class="slide-inner">
+      <input class="slide-open" type="radio" id="slide-1" 
+            name="slide" aria-hidden="true" hidden="" checked="checked">
+      <div class="slide-item">
+          <img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t39.30808-6/325580091_1549839492105434_2656503734707338679_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH7FVpYVPnfKN-SjgSeMs_oQ7RCi2M7RDJDtEKLYztEMnrqmQqmN876I0k_bQzUQsJUwnA9VcyuJR2eJJBnGkV4&_nc_ohc=0tsZ3p8p45YAb6yPm3_&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfAlebO1jrZYm_SCpniC6mi_ucs_d6Mbd9Us_ULLlJ5X8g&oe=66235BFE">
+      </div>
+      <input class="slide-open" type="radio" id="slide-2" 
+            name="slide" aria-hidden="true" hidden="">
+      <div class="slide-item">
+          <img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t39.30808-6/430023025_2134920063567359_1040106336214142916_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHRH2Co6_CusFbJgw60Wdl7xbwa7M-6Tp_FvBrsz7pOnza9tae19v8EFOiCZzgtVIS3UR4yxoBZi4r82wlIU2DB&_nc_ohc=F_w2C7U9jzIAb5cZRa9&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfARwpeRdxHPgWjKI55rnceArDAEisD6driFW1F2AsNxiA&oe=66234B61">
+      </div>
+      <input class="slide-open" type="radio" id="slide-3" 
+            name="slide" aria-hidden="true" hidden="">
+      <div class="slide-item">
+          <img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t1.6435-9/39753222_694880690904644_1174868950698164224_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFHh_vtJrvsY6z2XyRX6yPIAfx4vD_QDMoB_Hi8P9AMyhoomLThjNP7PJeT74AYMf4ehFS7xhnbesoIvE0V-8AN&_nc_ohc=aUb6Ona0vEUAb4hHNsQ&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfBmvM0Z2v-NhIxQfr4qWa3QdyMwZjOumYCBxjq_8TPeGQ&oe=6644FAC0">
+      </div>
+      <label for="slide-3" class="slide-control prev control-1">‹</label>
+      <label for="slide-2" class="slide-control next control-1">›</label>
+      <label for="slide-1" class="slide-control prev control-2">‹</label>
+      <label for="slide-3" class="slide-control next control-2">›</label>
+      <label for="slide-2" class="slide-control prev control-3">‹</label>
+      <label for="slide-1" class="slide-control next control-3">›</label>
+      <ol class="slide-indicador">
+          <li>
+              <label for="slide-1" class="slide-circulo">•</label>
+          </li>
+          <li>
+              <label for="slide-2" class="slide-circulo">•</label>
+          </li>
+          <li>
+              <label for="slide-3" class="slide-circulo">•</label>
+          </li>
+      </ol>
+  </div>
 </div>
   </body>
 
