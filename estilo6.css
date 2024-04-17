@@ -2,12 +2,14 @@
 body {
     background-color: #aa8caf;
     }
+  
+    
     .redes {
         display: inline-flex;
         list-style: none;
         height: 100%;
         width: 100%;
-        padding-top: 250px;
+        padding-top: 90px;
         font-family: "Poppins", sans-serif;
         justify-content: center;
       }
@@ -72,6 +74,7 @@ body {
       .redes .facebook:hover .tooltip::before {
         background: #1877F2;
         color: #fff;
+        
       }
       
       .redes .twitter:hover,
@@ -107,3 +110,5 @@ body {
         background: #46c2f3;
         color: #fff;
       }
+      
+      
