@@ -22,6 +22,8 @@ body {
 .image {
     width: 25%; /* Ancho de la imagen */
     image-orientation: initial;
+    border-radius: 50%;
+    margin-right: 80px;
 }
 
 
