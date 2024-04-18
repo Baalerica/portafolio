@@ -19,6 +19,9 @@ body {
 
 .image {
     width: 25%; /* Ancho de la imagen */
+    border-radius: 30%;
+   
+   
 }
 
 .button-below {
