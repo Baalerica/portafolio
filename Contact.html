@@ -184,6 +184,62 @@
   </main>
 </div>
 
+<div class="contact_form">
+  <div class="formulario">      
+    <h1>Contact Form</h1>
+      <h3>Write to me and I will contact you</h3>
+        <form action="submeter-formulario.php" method="post">       
+              <p>
+                <label for="nombre" class="colocar_nombre">Name
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Write your name">
+              </p>
+            
+              <p>
+                <label for="email" class="colocar_email">Email
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Write your Email">
+              </p>
+          
+              <p>
+                <label for="telefone" class="colocar_telefono">Whats App
+                </label>
+                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Write your whatsapp">
+              </p>    
+            
+              <p>
+                <label for="website" class="colocar_website">Web Site
+                </label>
+                  <input type="url" name="introducir_website" id="website" placeholder="Leave the link to your website">
+              </p>    
+            
+              <p>
+                <label for="asunto" class="colocar_asunto">Subject
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Write your subject">
+              </p>    
+            
+              <p>
+                <label for="mensaje" class="colocar_mensaje">Message
+                  <span class="obligatorio">*</span>
+                </label>                     
+                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Leave your comment here..."></textarea> 
+                              </p>                    
+            
+              <button type="submit" name="enviar_formulario" id="enviar"><p>Send</p></button>
+
+              <p class="aviso">
+                <span class="obligatorio"> * </span>Fields are required.
+              </p>          
+          
+        </form>
+  </div>  
+</div>
+
+
 <ul class="redes">
   <li class="icon facebook">
     <a href="https://www.facebook.com/ericardzb" target="_blank" rel="noopener noreferrer">
