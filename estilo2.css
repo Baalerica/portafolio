@@ -1,16 +1,15 @@
-
 body {
     background-color: #aa8caf;
     }
 .container {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos a los extremos */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; 
+    align-items: center; 
     width: 100%;
 }
 
 .text-container {
-    width: 70%; /* Ancho del contenedor de texto */
+    width: 70%;
     font-size: 30px;
     color: #ffffff;
     text-align:left;
@@ -20,7 +19,7 @@ body {
 }
 
 .image {
-    width: 25%; /* Ancho de la imagen */
+    width: 25%; 
     image-orientation: initial;
     border-radius: 50%;
     margin-right: 80px;
