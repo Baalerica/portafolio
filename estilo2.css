@@ -2,52 +2,13 @@
 body {
     background-color: #aa8caf;
     }
-.container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%;
-}
-
-.text-container {
-    width: 70%; 
-    font-size: 30px;
-    color: #ffffff;
-    text-align:left;
-    
-}
-
-.container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%;
-}
-
-.text-container {
-    width: 70%; 
-    font-size: 30px;
-    color: #ffffff;
-    text-align:left;
-    
+.caption {
+    font-weight: bold;
+    color: white;
 }
 
 .image {
     width: 10%;
-}
-
-/*
-h1 {
-    font-size: 36px; 
-    font-weight: bold; 
-    text-align: left; 
-}
-
-*/
-h2 {
-    font-size: 36px; 
-    font-weight: bold; 
-    text-align: left; 
 }
 .custom-heading {
     font-size: 1.875rem; 
@@ -55,6 +16,12 @@ h2 {
     letter-spacing: -0.025em; 
     color: #131c29; 
     margin-left: 10%;
+}
+
+.separator {
+    border: none;
+    background-color: #ccc;
+    margin: 50px 0;
 }
 
 
