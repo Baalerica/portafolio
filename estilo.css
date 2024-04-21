@@ -32,3 +32,9 @@ body {
     margin-right: 80px;
 }
 
+.separator {
+    border: none;
+    background-color: #ccc;
+    margin: 60px 0;
+}
+
