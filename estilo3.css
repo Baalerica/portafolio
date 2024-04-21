@@ -1,3 +1,4 @@
+
 body {
     background-color: #aa8caf;
     }
@@ -13,13 +14,26 @@ body {
     font-size: 30px;
     color: #ffffff;
     text-align:left;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
     align-items: center; 
-    text-align: center; 
+    width: 100%;
+}
+
+.text-container {
+    width: 70%; 
+    font-size: 30px;
+    color: #ffffff;
+    text-align:left;
     
 }
 
 .image {
-    width: 10%; 
-    
-    
+    width: 10%;
 }
+
+
