@@ -1,10 +1,13 @@
 
 body {
-    background-color: #aa8caf;
-    }
+    background-image: url('https://i.postimg.cc/Nf3DJrJG/vecteezylilac-background-YK0221-generated.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+  }
+  
 .caption {
     font-weight: bold;
-    color: white;
+    color: #000000;
 }
 
 .image {

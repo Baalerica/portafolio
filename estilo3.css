@@ -1,9 +1,10 @@
 
 body {
-    background-color: #aa8caf;
-    }
-  
-    
+  background-image: url('https://i.postimg.cc/Nf3DJrJG/vecteezylilac-background-YK0221-generated.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
     .redes {
         display: inline-flex;
         list-style: none;
@@ -116,7 +117,7 @@ body {
     body h4 {
       font-size: 30px; 
       font-weight: bold;
-      color: #fbfbfb;
+      color: #000000;
       text-align: center;
     }
       
