@@ -37,7 +37,7 @@ body {
 
 .separator {
     border: none;
-    background-color: #ccc;
+    background-color: #7e287e;
     margin: 60px 0;
+    height: 5px;
 }
-

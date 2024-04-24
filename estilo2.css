@@ -23,8 +23,9 @@ body {
 
 .separator {
     border: none;
-    background-color: #ccc;
-    margin: 50px 0;
+    background-color: #7e287e;
+    margin: 60px 0;
+    height: 5px;
 }
 
 
