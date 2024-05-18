@@ -183,7 +183,7 @@ export default function Home() {
       </nav>
       <header className="bg-[#d7bde2] shadow">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold tracking-tight text-white">
+          <h1 className="text-3xl font-bold tracking-tight text-black">
             Portfolio
           </h1>
         </div>
@@ -222,9 +222,9 @@ export default function Home() {
           <Image
             src="/yo2.jpg"
             alt="Description Image"
-            className="rounded-lg shadow-lg md:w-1/2"
-            width={200}
-            height={350}
+            className="rounded-lg shadow-lg"
+            width={300}
+            height={450}
           />
         </div>
       </main>
