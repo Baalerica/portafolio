@@ -192,8 +192,8 @@ export default function Home() {
         <div className="container">
           <div className="centered-text-container text-center text-white font-bold">
             <p>Hi!</p>
-            <p>I'm Baalerica</p>
-            <p>I'm going to become</p>
+            <p>Im Baalerica</p>
+            <p>Im going to become</p>
             <p>A web developer</p>
           </div>
           <Image
@@ -208,9 +208,9 @@ export default function Home() {
         <div className="container flex flex-col md:flex-row items-center">
           <div className="left-aligned-text-container text-left text-white font-bold md:w-1/2">
             <p>
-              I'm Erica Rodriguez, an engineer in Business Management,
-              currently pursuing a Master's degree in Industrial Engineering.
-              Alongside my academic endeavors, I've embarked on the exciting
+              Im Erica Rodriguez, an engineer in Business Management,
+              currently pursuing a Masters degree in Industrial Engineering.
+              Alongside my academic endeavors, Ive embarked on the exciting
               journey of learning front-end programming. This dual focus
               reflects my dedication to expanding my skills and knowledge base
               in both business and technology domains. I am eager to leverage
