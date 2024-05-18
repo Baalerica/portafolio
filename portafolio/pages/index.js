@@ -3,86 +3,83 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div
-      >
-        <nav className="bg-gray-800">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <Image
-                    className="h-8 w-8"
-                    src="/logo.png"
-                    alt="Logo Erica"
-                    width={32}
-                    height={32}
-                  />
-                </div>
-                <div className="hidden md:block">
-                  <div className="ml-10 flex items-baseline space-x-4">
-                    <a
-                      href="./index.html"
-                      className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
-                      aria-current="page"
-                    >
-                      Home
-                    </a>
-                    <a
-                      href="./Experience.html"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    >
-                      Experience
-                    </a>
-                    <a
-                      href="./Contact.html"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    >
-                      Contact
-                    </a>
-                  </div>
-                </div>
+      <nav className="bg-gray-800">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <Image
+                  className="h-8 w-8"
+                  src="/logo.png"
+                  alt="Logo Erica"
+                  width={32}
+                  height={32}
+                />
               </div>
               <div className="hidden md:block">
-                <div className="ml-4 flex items-center md:ml-6">
-                  <button
-                    type="button"
-                    className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                <div className="ml-10 flex items-baseline space-x-4">
+                  <a
+                    href="./index.html"
+                    className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                    aria-current="page"
                   >
-                    <span className="sr-only">View notifications</span>
-                    <svg
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
+                    Home
+                  </a>
+                  <a
+                    href="./Experience.html"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >
+                    Experience
+                  </a>
+                  <a
+                    href="./Contact.html"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >
+                    Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="hidden md:block">
+              <div className="ml-4 flex items-center md:ml-6">
+                <button
+                  type="button"
+                  className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                >
+                  <span className="sr-only">View notifications</span>
+                  <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75V9a6 6 0 10-12 0v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                    />
+                  </svg>
+                </button>
+                <div className="relative ml-3">
+                  <div>
+                    <button
+                      type="button"
+                      className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      id="user-menu-button"
+                      aria-expanded="false"
+                      aria-haspopup="true"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                      <span className="sr-only">Open user menu</span>
+                      <Image
+                        className="h-8 w-8 rounded-full"
+                        src="/yo.jpeg"
+                        alt="Profile Picture"
+                        width={32}
+                        height={32}
                       />
-                    </svg>
-                  </button>
-                  <div className="relative ml-3">
-                    <div>
-                      <button
-                        type="button"
-                        className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                        id="user-menu-button"
-                        aria-expanded="false"
-                        aria-haspopup="true"
-                      >
-                        <span className="sr-only">Open user menu</span>
-                        <Image
-                          className="h-8 w-8 rounded-full"
-                          src="/yo.jpeg"
-                          alt="Profile Picture"
-                          width={32}
-                          height={32}
-                        />
-                      </button>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -126,7 +123,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-        </nav>
+        </div>
         <div className="md:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <a
@@ -183,54 +180,54 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <header className="bg-#6ea95b shadow">
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold tracking-tight text-black-800">
-              Portfolio
-            </h1>
+      </nav>
+      <header className="bg-[#d7bde2] shadow">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold tracking-tight text-white">
+            Portfolio
+          </h1>
+        </div>
+      </header>
+      <main className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <div className="container">
+          <div className="centered-text-container text-center text-white font-bold">
+            <p>Hi!</p>
+            <p>I'm Baalerica</p>
+            <p>I'm going to become</p>
+            <p>A web developer</p>
           </div>
-        </header>
-        <main className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-          <div className="container">
-            <div className="centered-text-container text-center text-white font-bold">
-              <p>Hi!</p>
-              <p>I'm Baalerica</p>
-              <p>I'm going to become</p>
-              <p>A web developer</p>
-            </div>
-            <Image
-              src="/yo.jpeg"
-              alt="Profile Image"
-              className="rounded-lg shadow-lg"
-              width={300}
-              height={450}
-            />
+          <Image
+            src="/yo.jpeg"
+            alt="Profile Image"
+            className="rounded-lg shadow-lg"
+            width={300}
+            height={450}
+          />
+        </div>
+        <hr className="separator my-8" />
+        <div className="container flex flex-col md:flex-row items-center">
+          <div className="left-aligned-text-container text-left text-white font-bold md:w-1/2">
+            <p>
+              I'm Erica Rodriguez, an engineer in Business Management,
+              currently pursuing a Master's degree in Industrial Engineering.
+              Alongside my academic endeavors, I've embarked on the exciting
+              journey of learning front-end programming. This dual focus
+              reflects my dedication to expanding my skills and knowledge base
+              in both business and technology domains. I am eager to leverage
+              this diverse expertise to drive innovation and make meaningful
+              contributions in the fields of business management and
+              industrial engineering.
+            </p>
           </div>
-          <hr className="separator my-8" />
-          <div className="container flex flex-col md:flex-row items-center">
-            <div className="left-aligned-text-container text-left text-white font-bold md:w-1/2">
-              <p>
-                I'm Erica Rodriguez, an engineer in Business Management,
-                currently pursuing a Master's degree in Industrial Engineering.
-                Alongside my academic endeavors, I've embarked on the exciting
-                journey of learning front-end programming. This dual focus
-                reflects my dedication to expanding my skills and knowledge base
-                in both business and technology domains. I am eager to leverage
-                this diverse expertise to drive innovation and make meaningful
-                contributions in the fields of business management and
-                industrial engineering.
-              </p>
-            </div>
-            <Image
-              src="/yo2.jpg"
-              alt="Description Image"
-              className="rounded-lg shadow-lg md:w-1/2"
-              width={300}
-              height={450}
-            />
-          </div>
-        </main>
-      </div>
+          <Image
+            src="/yo2.jpg"
+            alt="Description Image"
+            className="rounded-lg shadow-lg md:w-1/2"
+            width={200}
+            height={350}
+          />
+        </div>
+      </main>
     </>
   );
 }
